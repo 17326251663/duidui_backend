@@ -1,0 +1,24 @@
+#端口号
+server:
+  port: 10010
+
+#服务名
+spring:
+  application:
+    name: cgzuul
+  servlet:
+    multipart:
+      max-file-size: 2MB    #上传文件的大小
+#将网关服务添加到注册中心
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    prefer-ip-address: true
+#网关统一配置 --  访问路径 http://localhost:10010/v3/服务名/路径
+zuul:
+  prefix: /v3
+  sensitive-headers: Cookie,Set-Cookie
