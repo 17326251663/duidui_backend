@@ -1,0 +1,23 @@
+#端口号
+server:
+  port: 8011
+#服务名和数据源(连接池)
+spring:
+  application:
+    name: userservice
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dd_user?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 1234
+#注册地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+myredis:
+  host: 127.0.0.1
+  port: 6379
+ribbon:
+  eureka:
+    enable: true

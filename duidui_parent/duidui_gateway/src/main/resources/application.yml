@@ -1,0 +1,16 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: zuuldemo
+#网关前缀
+zuul:
+  prefix: /api
+#注册地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+ribbon:
+  ReadTimeout: 120000  #请求处理的超时时间
+  ConnectTimeout: 30000  #请求连接的超时时间
