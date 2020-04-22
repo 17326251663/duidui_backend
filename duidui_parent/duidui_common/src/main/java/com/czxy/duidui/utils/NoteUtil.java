@@ -33,8 +33,8 @@ public class NoteUtil{
     static final String domain = "dysmsapi.aliyuncs.com";
 
     // TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
-    static final String accessKeyId = "LTAIK0uS1smz1Y7t";
-    static final String accessKeySecret = "nDep3Tadkwy9Na2zKDCfbKo5lzRD1b";
+    static final String accessKeyId = "";
+    static final String accessKeySecret = "";
 
     public  static String sendSms(String telephone) throws ClientException {
 
